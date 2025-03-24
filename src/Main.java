@@ -57,7 +57,7 @@ public class Main {
         }
 
         if (senha.charAt(0) != email.charAt(0) || senha.charAt(1) != email.charAt(1)
-                || senha.charAt(2) != email.charAt(2) || senha.length() == 5
+                || senha.charAt(2) != email.charAt(2) || senha.length() < 5
                 || !Character.isDigit(senha.charAt(3)) || !Character.isDigit(senha.charAt(4))) {
             //senha
             System.out.println("Senha invalida!. \n" +
@@ -72,7 +72,8 @@ public class Main {
         System.out.println("( 2 ) Alterar Email");
         System.out.println("( 3 ) Imprimir dados do Participante");
         System.out.println("( 4 ) Comprar Ingresso");
-        System.out.println("( 5 ) Sair");
+        System.out.println("( 5 ) Cadastrar convidados");
+        System.out.println("( 6 ) Sair");
 
         System.out.print("\nSelecione: ");
         int escolha = sc.nextInt();
@@ -110,7 +111,10 @@ public class Main {
             }
         }
         if (escolha == 3) {
-
+            System.out.println("--------------- Informações do Usuário ---------------");
+            System.out.println(String.format("| %-15s | %-30s |", "Nome", nome));
+            System.out.println(String.format("| %-15s | %-30s |", "Email", email));
+            System.out.println("-------------------------------------------------------");
         }
         if (escolha == 4) {
             LocalDate dataHoje = LocalDate.now();
@@ -211,7 +215,8 @@ public class Main {
                         "=====================================");
             }
         }
-        if (escolha == 5) {
+        if (escolha == 5){}
+        if (escolha == 6) {
             System.out.print("Informe sua senha para fechar o programa:     ");
             sc.nextLine();
             String senhaDigitada = sc.nextLine();
@@ -225,7 +230,7 @@ public class Main {
             System.out.println("Senha Invalida!");
             System.exit(0);
         }
-        if (escolha > 5) {
+        if (escolha > 7) {
             System.out.println("Opcao Invalida!");
             System.exit(0);
         }
