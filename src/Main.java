@@ -33,7 +33,15 @@ public class Main {
         // Inicio do bloco de validacao de senha e email.
         if (nome.trim().contains(" ")){
             //nome
+            String[] vect = nome.split(" ");
+            String primeiroNome = vect[0];
+            String segundoNome = vect[1];
 
+            if(primeiroNome.length() < 3 || segundoNome.length() < 3){
+                System.out.println("Nome invalido! \n" +
+                        "Nomes devem ter mais pelo menos 3 letras.");
+                System.exit(0);
+            }
 
 
         } else{
@@ -57,7 +65,7 @@ public class Main {
                     "A mesma deve conter as 3 primeiras letras do seu email, seguida por dois numeros.");
             System.exit(0);
         }
-        
+
         //Fim do bloco de valicação
 
         System.out.println("\n Menu: ");
