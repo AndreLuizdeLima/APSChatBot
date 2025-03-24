@@ -40,58 +40,63 @@ public class Main {
         System.out.print("\nSelecione: ");
         int escolha = sc.nextInt();
 
-        if (escolha == 1){
+        if (escolha == 1) {
             System.out.println("\n========== Alteração de Nome ==========\n");
 
             System.out.print("Informe o novo nome: ");
             sc.nextLine();
             String novoNome = sc.nextLine();
 
-            if(novoNome.length() >= 3){
+            if (novoNome.length() >= 3 && nome.trim().contains(" ")) {
+
                 nome = novoNome;
-                if(nome.trim().contains(" ")){
-                    System.out.println("""
-                                   Nome alterado com sucesso.
-                                   novo nome: 
-                                   """+novoNome);
-                }else {
-                    System.out.println("nome sem espaço");
-                    System.exit(0);
-                }
 
+                System.out.println("""
+                        Nome alterado com sucesso.
+                        novo nome: 
+                        """ + nome);
 
-            }else{
-                System.out.println("Nome menor que 3 letras");
+            } else {
+                System.out.println("Nome menor que 3 letras!");
                 System.exit(0);
             }
         }
-        if (escolha == 2){
+        if (escolha == 2) {
+            System.out.println("\n========== Alteração de Email ==========\n");
 
+            System.out.print("Informe o novo Email: ");
+            sc.nextLine();
+            String novoEmail = sc.nextLine();
 
-            String novoEmail = "andre";
+            if (novoEmail.contains("@") && novoEmail.endsWith(".com")) {
 
-            if (novoEmail.contains("@") && novoEmail.endsWith(".com")){
+                email = novoEmail;
 
-                    System.out.println("""
-                                   Email alterado com sucesso
-                                   seu novo email é
-                                   """+novoEmail);
+                System.out.println("""
+                        Email alterado com sucesso
+                        seu novo email é
+                        """ + email);
 
+            } else {
+                System.out.println("Email Invalido!");
+                System.exit(0);
             }
 
 
         }
-        if (escolha == 3){
+        if (escolha == 3) {
 
         }
-        if (escolha == 4){
+        if (escolha == 4) {
 
         }
-        if (escolha == 5){
-
+        if (escolha == 5) {
+            System.out.println("Saindo....");
+            System.exit(0);
         }
-        if (escolha < 5){
-
+        if (escolha < 5) {
+            System.out.println("Opcao Invalida!");
+            System.exit(0);
         }
 
         sc.close();

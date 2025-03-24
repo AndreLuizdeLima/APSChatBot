@@ -1,6 +1,6 @@
 # APS trabalho criação do Bot
 
-## Grupo 1
+## Grupo 2
 
 * Andre Luiz de Lima
 * Eduardo Krause
