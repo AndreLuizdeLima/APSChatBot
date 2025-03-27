@@ -160,7 +160,7 @@ public class Main {
                                     "        Fatura (1ª Impressão)   \n" +
                                     "=====================================\n" +
                                     "Nome: " + nome + "\n" +
-                                    "IGRESSO MEIA ESTUDANTE\n" +
+                                    "INGRESSO MEIA ESTUDANTE\n" +
                                     "Código de Uso: " + codigo + "\n" +
                                     "Email: " + email + "\n" +
                                     "Data: " + data + "\n" +
@@ -169,7 +169,7 @@ public class Main {
                                     "=====================================\n" +
                                     "||  |  || ||| ||  |   ||  ||  ||  \n" +
                                     "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                                    String.format("%.0f%n", numeroAleatorio) + // Aqui, estamos formatando o número para exibir como inteiro
+                                    String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
                                     "=====================================\n" +
                                     "    Agradecemos pela preferência! \n" +
                                     "=====================================");
@@ -183,7 +183,7 @@ public class Main {
                 System.out.println("=====================================\n" +
                         "        Fatura (1ª Impressão)   \n" +
                         "=====================================\n" +
-                        "IGRESSO PADRÃO\n" +
+                        "INGRESSO PADRÃO\n" +
                         "Nome: " + nome + "\n" +
                         "Email: " + email + "\n" +
                         "Data: " + data + "\n" +
@@ -201,7 +201,7 @@ public class Main {
                 System.out.println("=====================================\n" +
                         "        Fatura (1ª Impressão)   \n" +
                         "=====================================\n" +
-                        "IGRESSO PREMIUM\n" +
+                        "INGRESSO PREMIUM\n" +
                         "Nome: " + nome + "\n" +
                         "Email: " + email + "\n" +
                         "Data: " + data + "\n" +
@@ -215,7 +215,195 @@ public class Main {
                         "=====================================");
             }
         }
-        if (escolha == 5){}
+        if (escolha == 5) {
+
+            System.out.println("\n========== Cadastro de convidados ==========\n");
+
+            String convidado1 = "", convidado2 = "", convidado3 = "", resposta = "";
+            int idadeconv1 = 0, idadeconv2 = 0, idadeconv3 = 0;
+            Scanner scStr = new Scanner(System.in);
+            Scanner scInt = new Scanner(System.in);
+
+            System.out.print("Informe o nome do convidado 1: ");
+            convidado1 = scStr.nextLine();
+            boolean nomeValido = true;
+            if (convidado1.contains("0")
+                    || convidado1.contains("1")
+                    || convidado1.contains("2")
+                    || convidado1.contains("3")
+                    || convidado1.contains("4")
+                    || convidado1.contains("5")
+                    || convidado1.contains("6")
+                    || convidado1.contains("7")
+                    || convidado1.contains("8")
+                    || convidado1.contains("9")) {
+                nomeValido = false;
+                System.exit(0);
+            } else if (convidado1.length() < 3) {
+                nomeValido = false;
+                System.exit(0);
+            } else if (convidado1.contains("!")
+                    || convidado1.contains("@")
+                    || convidado1.contains("#")
+                    || convidado1.contains("$")
+                    || convidado1.contains("%")
+                    || convidado1.contains("¨")
+                    || convidado1.contains("&")
+                    || convidado1.contains("*")
+                    || convidado1.contains("(")
+                    || convidado1.contains(")")
+                    || convidado1.contains("=")
+                    || convidado1.contains("+")
+                    || convidado1.contains(";")
+                    || convidado1.contains(".")
+                    || convidado1.contains(",")
+                    || convidado1.contains("-")
+                    || convidado1.contains("'")
+                    || convidado1.contains("§")
+                    || convidado1.contains(":")
+                    || convidado1.contains("¬")
+                    || convidado1.contains("¢")
+                    || convidado1.contains("£")
+                    || convidado1.contains("³")
+                    || convidado1.contains("²")
+                    || convidado1.contains("¹")
+                    || convidado1.contains("º")
+                    || convidado1.contains("ª")
+                    || convidado1.contains("|")
+                    || convidado1.contains("_")) {
+                nomeValido = false;
+                System.exit(0);
+            }
+            if (nomeValido) {
+                System.out.print("Informe a idade do convidado 1: ");
+                idadeconv1 = scInt.nextInt();
+            }
+            System.out.print("Deseja convidar mais alguém?: ");
+            resposta = scStr.nextLine();
+            if (resposta.trim().toUpperCase().equals("SIM")) {
+                System.out.print("Informe o nome do convidado 2: ");
+                convidado1 = scStr.nextLine();
+
+                if (convidado1.contains("0")
+                        || convidado1.contains("1")
+                        || convidado1.contains("2")
+                        || convidado1.contains("3")
+                        || convidado1.contains("4")
+                        || convidado1.contains("5")
+                        || convidado1.contains("6")
+                        || convidado1.contains("7")
+                        || convidado1.contains("8")
+                        || convidado1.contains("9")) {
+                    nomeValido = false;
+                    System.exit(0);
+                } else if (convidado1.length() < 3) {
+                    nomeValido = false;
+                    System.exit(0);
+                } else if (convidado1.contains("!")
+                        || convidado1.contains("@")
+                        || convidado1.contains("#")
+                        || convidado1.contains("$")
+                        || convidado1.contains("%")
+                        || convidado1.contains("¨")
+                        || convidado1.contains("&")
+                        || convidado1.contains("*")
+                        || convidado1.contains("(")
+                        || convidado1.contains(")")
+                        || convidado1.contains("=")
+                        || convidado1.contains("+")
+                        || convidado1.contains(";")
+                        || convidado1.contains(".")
+                        || convidado1.contains(",")
+                        || convidado1.contains("-")
+                        || convidado1.contains("'")
+                        || convidado1.contains("§")
+                        || convidado1.contains(":")
+                        || convidado1.contains("¬")
+                        || convidado1.contains("¢")
+                        || convidado1.contains("£")
+                        || convidado1.contains("³")
+                        || convidado1.contains("²")
+                        || convidado1.contains("¹")
+                        || convidado1.contains("º")
+                        || convidado1.contains("ª")
+                        || convidado1.contains("|")
+                        || convidado1.contains("_")) {
+                    nomeValido = false;
+                    System.exit(0);
+                }
+                if (nomeValido) {
+                    System.out.print("Informe a idade do convidado 2: ");
+                    idadeconv1 = scInt.nextInt();
+                }
+                System.out.print("Deseja convidar mais alguém?: ");
+                resposta = scStr.nextLine();
+                if (resposta.trim().toUpperCase().equals("SIM")) {
+                    System.out.print("Informe o nome do convidado 3: ");
+                    convidado1 = scStr.nextLine();
+                    if (convidado1.contains("0")
+                            || convidado1.contains("1")
+                            || convidado1.contains("2")
+                            || convidado1.contains("3")
+                            || convidado1.contains("4")
+                            || convidado1.contains("5")
+                            || convidado1.contains("6")
+                            || convidado1.contains("7")
+                            || convidado1.contains("8")
+                            || convidado1.contains("9")) {
+                        nomeValido = false;
+                        System.exit(0);
+                    } else if (convidado1.length() < 3) {
+                        nomeValido = false;
+                        System.exit(0);
+                    } else if (convidado1.contains("!")
+                            || convidado1.contains("@")
+                            || convidado1.contains("#")
+                            || convidado1.contains("$")
+                            || convidado1.contains("%")
+                            || convidado1.contains("¨")
+                            || convidado1.contains("&")
+                            || convidado1.contains("*")
+                            || convidado1.contains("(")
+                            || convidado1.contains(")")
+                            || convidado1.contains("=")
+                            || convidado1.contains("+")
+                            || convidado1.contains(";")
+                            || convidado1.contains(".")
+                            || convidado1.contains(",")
+                            || convidado1.contains("-")
+                            || convidado1.contains("'")
+                            || convidado1.contains(":")
+                            || convidado1.contains("¬")
+                            || convidado1.contains("¢")
+                            || convidado1.contains("£")
+                            || convidado1.contains("³")
+                            || convidado1.contains("²")
+                            || convidado1.contains("¹")
+                            || convidado1.contains("º")
+                            || convidado1.contains("ª")
+                            || convidado1.contains("|")
+                            || convidado1.contains("_")
+                            || convidado1.contains("§")) {
+                        nomeValido = false;
+                        System.exit(0);
+                    }
+                    if (nomeValido) {
+                        System.out.print("Informe a idade do convidado 3: ");
+                        idadeconv1 = scInt.nextInt();
+                    }
+                    System.out.print("Deseja convidar mais alguém?: ");
+                    resposta = scStr.nextLine();
+                    if (resposta.trim().toUpperCase().equals("SIM")) {
+
+                        System.out.print("Numero de convidados excedido: ");
+                        idadeconv3 = scInt.nextInt();
+
+                    }
+                }
+
+            }
+
+        }
         if (escolha == 6) {
             System.out.print("Informe sua senha para fechar o programa:     ");
             sc.nextLine();
