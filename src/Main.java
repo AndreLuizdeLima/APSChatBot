@@ -24,11 +24,11 @@ public class Main {
                 
                 """);
 
-        System.out.print("Entre com seu nome: ");
+        System.out.print("Informe seu nome completo \nEntre com seu nome: ");
         String nome = sc.nextLine();
         System.out.print("Entre com seu email: ");
         String email = sc.nextLine();
-        System.out.print("Entre com sua senha: ");
+        System.out.print("Formato de senha 3 primeiras letras do seu email, seguida por dois numeros \nEntre com sua senha: ");
         String senha = sc.nextLine();
 
         // Inicio do bloco de validacao de senha, nome e email.
@@ -57,7 +57,7 @@ public class Main {
         }
 
         if (senha.charAt(0) != email.charAt(0) || senha.charAt(1) != email.charAt(1)
-                || senha.charAt(2) != email.charAt(2) || senha.length() < 5
+                || senha.charAt(2) != email.charAt(2) || senha.length() != 5
                 || !Character.isDigit(senha.charAt(3)) || !Character.isDigit(senha.charAt(4))) {
             //senha
             System.out.println("Senha invalida!. \n" +
