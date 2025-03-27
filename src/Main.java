@@ -154,192 +154,323 @@ public class Main {
                 String codigo = scan2.nextLine();
 
                 if (codigo.length() == 9) {
-                    double valor = 25 * quantidade;
-                    System.out.println(
-                            "=====================================\n" +
-                                    "        Fatura (1ª Impressão)   \n" +
-                                    "=====================================\n" +
-                                    "Nome: " + nome + "\n" +
-                                    "INGRESSO MEIA ESTUDANTE\n" +
-                                    "Código de Uso: " + codigo + "\n" +
-                                    "Email: " + email + "\n" +
-                                    "Data: " + data + "\n" +
-                                    "Quantidade de ingressos: " + quantidade +
-                                    "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
-                                    "=====================================\n" +
-                                    "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                                    "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                                    String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
-                                    "=====================================\n" +
-                                    "    Agradecemos pela preferência! \n" +
-                                    "=====================================");
+                    double valor = 25;
+                    if (quantidade == 1) {
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (1ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                    }
+                    if (quantidade == 2) {
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (1ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (2ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                    }
+                    if (quantidade == 3) {
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (1ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "Valor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (2ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "Valor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                        System.out.println(
+                                "=====================================\n" +
+                                        "        Fatura (3ª Impressão)   \n" +
+                                        "=====================================\n" +
+                                        "Nome: " + nome + "\n" +
+                                        "INGRESSO MEIA ESTUDANTE\n" +
+                                        "Código de Uso: " + codigo + "\n" +
+                                        "Email: " + email + "\n" +
+                                        "Data: " + data + "\n" +
+                                        "Valor: R$ " + String.format("%.2f", valor) + "\n" +
+                                        "=====================================\n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                        String.format("%.0f%n", numeroAleatorio) + // Aqui, formatando o número para exibir como inteiro
+                                        "=====================================\n" +
+                                        "    Agradecemos pela preferência! \n" +
+                                        "=====================================\n\n");
+                    }
                 } else {
                     System.out.println("Código Inválido");
                 }
             }
             if (ingresso.equalsIgnoreCase("padrao")) {
 
-                double valor = 50 * quantidade;
-                System.out.println("=====================================\n" +
-                        "        Fatura (1ª Impressão)   \n" +
-                        "=====================================\n" +
-                        "INGRESSO PADRÃO\n" +
-                        "Nome: " + nome + "\n" +
-                        "Email: " + email + "\n" +
-                        "Data: " + data + "\n" +
-                        "Quantidade de ingressos: " + quantidade +
-                        "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
-                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                        String.format("%.0f%n", numeroAleatorio) +
-                        "=====================================\n" +
-                        "    Agradecemos pela preferência! \n" +
-                        "=====================================");
-            }
-            if (ingresso.equalsIgnoreCase("premium")) {
-                double valor = 150 * quantidade;
-                System.out.println("=====================================\n" +
-                        "        Fatura (1ª Impressão)   \n" +
-                        "=====================================\n" +
-                        "INGRESSO PREMIUM\n" +
-                        "Nome: " + nome + "\n" +
-                        "Email: " + email + "\n" +
-                        "Data: " + data + "\n" +
-                        "Quantidade de ingressos: " + quantidade +
-                        "\nValor: R$ " + String.format("%.2f", valor) + "\n" +
-                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                        "||  |  || ||| ||  |   ||  ||  ||  \n" +
-                        String.format("%.0f%n", numeroAleatorio) +
-                        "=====================================\n" +
-                        "    Agradecemos pela preferência! \n" +
-                        "=====================================");
-            }
-        }
-        if (escolha == 5) {
-
-            System.out.println("\n========== Cadastro de convidados ==========\n");
-
-            String convidado1 = "", convidado2 = "", convidado3 = "", resposta = "";
-            int idadeconv1 = 0, idadeconv2 = 0, idadeconv3 = 0;
-            Scanner scStr = new Scanner(System.in);
-            Scanner scInt = new Scanner(System.in);
-
-            System.out.print("Informe o nome do convidado 1: ");
-            convidado1 = scStr.nextLine();
-            boolean nomeValido = true;
-            if (convidado1.contains("0")
-                    || convidado1.contains("1")
-                    || convidado1.contains("2")
-                    || convidado1.contains("3")
-                    || convidado1.contains("4")
-                    || convidado1.contains("5")
-                    || convidado1.contains("6")
-                    || convidado1.contains("7")
-                    || convidado1.contains("8")
-                    || convidado1.contains("9")) {
-                nomeValido = false;
-                System.exit(0);
-            } else if (convidado1.length() < 3) {
-                nomeValido = false;
-                System.exit(0);
-            } else if (convidado1.contains("!")
-                    || convidado1.contains("@")
-                    || convidado1.contains("#")
-                    || convidado1.contains("$")
-                    || convidado1.contains("%")
-                    || convidado1.contains("¨")
-                    || convidado1.contains("&")
-                    || convidado1.contains("*")
-                    || convidado1.contains("(")
-                    || convidado1.contains(")")
-                    || convidado1.contains("=")
-                    || convidado1.contains("+")
-                    || convidado1.contains(";")
-                    || convidado1.contains(".")
-                    || convidado1.contains(",")
-                    || convidado1.contains("-")
-                    || convidado1.contains("'")
-                    || convidado1.contains("§")
-                    || convidado1.contains(":")
-                    || convidado1.contains("¬")
-                    || convidado1.contains("¢")
-                    || convidado1.contains("£")
-                    || convidado1.contains("³")
-                    || convidado1.contains("²")
-                    || convidado1.contains("¹")
-                    || convidado1.contains("º")
-                    || convidado1.contains("ª")
-                    || convidado1.contains("|")
-                    || convidado1.contains("_")) {
-                nomeValido = false;
-                System.exit(0);
-            }
-            if (nomeValido) {
-                System.out.print("Informe a idade do convidado 1: ");
-                idadeconv1 = scInt.nextInt();
-            }
-            System.out.print("Deseja convidar mais alguém?: ");
-            resposta = scStr.nextLine();
-            if (resposta.trim().toUpperCase().equals("SIM")) {
-                System.out.print("Informe o nome do convidado 2: ");
-                convidado1 = scStr.nextLine();
-
-                if (convidado1.contains("0")
-                        || convidado1.contains("1")
-                        || convidado1.contains("2")
-                        || convidado1.contains("3")
-                        || convidado1.contains("4")
-                        || convidado1.contains("5")
-                        || convidado1.contains("6")
-                        || convidado1.contains("7")
-                        || convidado1.contains("8")
-                        || convidado1.contains("9")) {
-                    nomeValido = false;
-                    System.exit(0);
-                } else if (convidado1.length() < 3) {
-                    nomeValido = false;
-                    System.exit(0);
-                } else if (convidado1.contains("!")
-                        || convidado1.contains("@")
-                        || convidado1.contains("#")
-                        || convidado1.contains("$")
-                        || convidado1.contains("%")
-                        || convidado1.contains("¨")
-                        || convidado1.contains("&")
-                        || convidado1.contains("*")
-                        || convidado1.contains("(")
-                        || convidado1.contains(")")
-                        || convidado1.contains("=")
-                        || convidado1.contains("+")
-                        || convidado1.contains(";")
-                        || convidado1.contains(".")
-                        || convidado1.contains(",")
-                        || convidado1.contains("-")
-                        || convidado1.contains("'")
-                        || convidado1.contains("§")
-                        || convidado1.contains(":")
-                        || convidado1.contains("¬")
-                        || convidado1.contains("¢")
-                        || convidado1.contains("£")
-                        || convidado1.contains("³")
-                        || convidado1.contains("²")
-                        || convidado1.contains("¹")
-                        || convidado1.contains("º")
-                        || convidado1.contains("ª")
-                        || convidado1.contains("|")
-                        || convidado1.contains("_")) {
-                    nomeValido = false;
-                    System.exit(0);
+                double valor1 = 50;
+                if (quantidade == 1) {
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "Valor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
                 }
-                if (nomeValido) {
-                    System.out.print("Informe a idade do convidado 2: ");
-                    idadeconv1 = scInt.nextInt();
+                if (quantidade == 2) {
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "Valor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "Valor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
                 }
-                System.out.print("Deseja convidar mais alguém?: ");
-                resposta = scStr.nextLine();
-                if (resposta.trim().toUpperCase().equals("SIM")) {
-                    System.out.print("Informe o nome do convidado 3: ");
+                if (quantidade == 3) {
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "Valor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
+
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "Valor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
+
+                    System.out.println("=====================================\n" +
+                            "        Fatura (1ª Impressão)   \n" +
+                            "=====================================\n" +
+                            "INGRESSO PADRÃO\n" +
+                            "Nome: " + nome + "\n" +
+                            "Email: " + email + "\n" +
+                            "Data: " + data + "\n" +
+                            "\nValor: R$ " + String.format("%.2f", valor1) + "\n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                            String.format("%.0f%n", numeroAleatorio) +
+                            "=====================================\n" +
+                            "    Agradecemos pela preferência! \n" +
+                            "=====================================\n\n");
+                }
+                if (ingresso.equalsIgnoreCase("premium")) {
+                    double valor2 = 150;
+                    if (quantidade == 1) {
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+                    }
+                    if (quantidade == 2) {
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+                    }
+                    if (quantidade == 3) {
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+
+                        System.out.println("=====================================\n" +
+                                "        Fatura (1ª Impressão)   \n" +
+                                "=====================================\n" +
+                                "INGRESSO PREMIUM\n" +
+                                "Nome: " + nome + "\n" +
+                                "Email: " + email + "\n" +
+                                "Data: " + data + "\n" +
+                                "\nValor: R$ " + String.format("%.2f", valor2) + "\n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                "||  |  || ||| ||  |   ||  ||  ||  \n" +
+                                String.format("%.0f%n", numeroAleatorio) +
+                                "=====================================\n" +
+                                "    Agradecemos pela preferência! \n" +
+                                "=====================================\n\n");
+
+                    }
+                }
+                if (escolha == 5) {
+
+                    System.out.println("\n========== Cadastro de convidados ==========\n");
+
+                    String convidado1 = "", convidado2 = "", convidado3 = "", resposta = "";
+                    int idadeconv1 = 0, idadeconv2 = 0, idadeconv3 = 0;
+                    Scanner scStr = new Scanner(System.in);
+                    Scanner scInt = new Scanner(System.in);
+
+                    System.out.print("Informe o nome do convidado 1: ");
                     convidado1 = scStr.nextLine();
+                    boolean nomeValido = true;
                     if (convidado1.contains("0")
                             || convidado1.contains("1")
                             || convidado1.contains("2")
@@ -372,6 +503,7 @@ public class Main {
                             || convidado1.contains(",")
                             || convidado1.contains("-")
                             || convidado1.contains("'")
+                            || convidado1.contains("§")
                             || convidado1.contains(":")
                             || convidado1.contains("¬")
                             || convidado1.contains("¢")
@@ -382,49 +514,164 @@ public class Main {
                             || convidado1.contains("º")
                             || convidado1.contains("ª")
                             || convidado1.contains("|")
-                            || convidado1.contains("_")
-                            || convidado1.contains("§")) {
+                            || convidado1.contains("_")) {
                         nomeValido = false;
                         System.exit(0);
                     }
                     if (nomeValido) {
-                        System.out.print("Informe a idade do convidado 3: ");
+                        System.out.print("Informe a idade do convidado 1: ");
                         idadeconv1 = scInt.nextInt();
                     }
                     System.out.print("Deseja convidar mais alguém?: ");
                     resposta = scStr.nextLine();
                     if (resposta.trim().toUpperCase().equals("SIM")) {
+                        System.out.print("Informe o nome do convidado 2: ");
+                        convidado1 = scStr.nextLine();
 
-                        System.out.print("Numero de convidados excedido: ");
-                        idadeconv3 = scInt.nextInt();
+                        if (convidado1.contains("0")
+                                || convidado1.contains("1")
+                                || convidado1.contains("2")
+                                || convidado1.contains("3")
+                                || convidado1.contains("4")
+                                || convidado1.contains("5")
+                                || convidado1.contains("6")
+                                || convidado1.contains("7")
+                                || convidado1.contains("8")
+                                || convidado1.contains("9")) {
+                            nomeValido = false;
+                            System.exit(0);
+                        } else if (convidado1.length() < 3) {
+                            nomeValido = false;
+                            System.exit(0);
+                        } else if (convidado1.contains("!")
+                                || convidado1.contains("@")
+                                || convidado1.contains("#")
+                                || convidado1.contains("$")
+                                || convidado1.contains("%")
+                                || convidado1.contains("¨")
+                                || convidado1.contains("&")
+                                || convidado1.contains("*")
+                                || convidado1.contains("(")
+                                || convidado1.contains(")")
+                                || convidado1.contains("=")
+                                || convidado1.contains("+")
+                                || convidado1.contains(";")
+                                || convidado1.contains(".")
+                                || convidado1.contains(",")
+                                || convidado1.contains("-")
+                                || convidado1.contains("'")
+                                || convidado1.contains("§")
+                                || convidado1.contains(":")
+                                || convidado1.contains("¬")
+                                || convidado1.contains("¢")
+                                || convidado1.contains("£")
+                                || convidado1.contains("³")
+                                || convidado1.contains("²")
+                                || convidado1.contains("¹")
+                                || convidado1.contains("º")
+                                || convidado1.contains("ª")
+                                || convidado1.contains("|")
+                                || convidado1.contains("_")) {
+                            nomeValido = false;
+                            System.exit(0);
+                        }
+                        if (nomeValido) {
+                            System.out.print("Informe a idade do convidado 2: ");
+                            idadeconv1 = scInt.nextInt();
+                        }
+                        System.out.print("Deseja convidar mais alguém?: ");
+                        resposta = scStr.nextLine();
+                        if (resposta.trim().toUpperCase().equals("SIM")) {
+                            System.out.print("Informe o nome do convidado 3: ");
+                            convidado1 = scStr.nextLine();
+                            if (convidado1.contains("0")
+                                    || convidado1.contains("1")
+                                    || convidado1.contains("2")
+                                    || convidado1.contains("3")
+                                    || convidado1.contains("4")
+                                    || convidado1.contains("5")
+                                    || convidado1.contains("6")
+                                    || convidado1.contains("7")
+                                    || convidado1.contains("8")
+                                    || convidado1.contains("9")) {
+                                nomeValido = false;
+                                System.exit(0);
+                            } else if (convidado1.length() < 3) {
+                                nomeValido = false;
+                                System.exit(0);
+                            } else if (convidado1.contains("!")
+                                    || convidado1.contains("@")
+                                    || convidado1.contains("#")
+                                    || convidado1.contains("$")
+                                    || convidado1.contains("%")
+                                    || convidado1.contains("¨")
+                                    || convidado1.contains("&")
+                                    || convidado1.contains("*")
+                                    || convidado1.contains("(")
+                                    || convidado1.contains(")")
+                                    || convidado1.contains("=")
+                                    || convidado1.contains("+")
+                                    || convidado1.contains(";")
+                                    || convidado1.contains(".")
+                                    || convidado1.contains(",")
+                                    || convidado1.contains("-")
+                                    || convidado1.contains("'")
+                                    || convidado1.contains(":")
+                                    || convidado1.contains("¬")
+                                    || convidado1.contains("¢")
+                                    || convidado1.contains("£")
+                                    || convidado1.contains("³")
+                                    || convidado1.contains("²")
+                                    || convidado1.contains("¹")
+                                    || convidado1.contains("º")
+                                    || convidado1.contains("ª")
+                                    || convidado1.contains("|")
+                                    || convidado1.contains("_")
+                                    || convidado1.contains("§")) {
+                                nomeValido = false;
+                                System.exit(0);
+                            }
+                            if (nomeValido) {
+                                System.out.print("Informe a idade do convidado 3: ");
+                                idadeconv1 = scInt.nextInt();
+                            }
+                            System.out.print("Deseja convidar mais alguém?: ");
+                            resposta = scStr.nextLine();
+                            if (resposta.trim().toUpperCase().equals("SIM")) {
+
+                                System.out.print("Numero de convidados excedido: ");
+                                idadeconv3 = scInt.nextInt();
+
+                            }
+                        }
 
                     }
+
+                }
+                if (escolha == 6) {
+                    System.out.print("Informe sua senha para fechar o programa:     ");
+                    sc.nextLine();
+                    String senhaDigitada = sc.nextLine();
+
+                    if (senha.equals(senhaDigitada)) {
+                        System.out.println("Senha Correta!");
+                        System.out.println("Saindo....");
+                        System.exit(0);
+                    }
+
+                    System.out.println("Senha Invalida!");
+                    System.exit(0);
+                }
+                if (escolha > 7) {
+                    System.out.println("Opcao Invalida!");
+                    System.exit(0);
                 }
 
+                sc.close();
+
+
             }
-
         }
-        if (escolha == 6) {
-            System.out.print("Informe sua senha para fechar o programa:     ");
-            sc.nextLine();
-            String senhaDigitada = sc.nextLine();
-
-            if (senha.equals(senhaDigitada)) {
-                System.out.println("Senha Correta!");
-                System.out.println("Saindo....");
-                System.exit(0);
-            }
-
-            System.out.println("Senha Invalida!");
-            System.exit(0);
-        }
-        if (escolha > 7) {
-            System.out.println("Opcao Invalida!");
-            System.exit(0);
-        }
-
-        sc.close();
-
 
     }
 }
